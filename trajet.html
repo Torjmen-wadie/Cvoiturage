@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chercher un traget</title>
+	<meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <link rel="stylesheet" type="text/css" href="chercher.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="header">
+  <a href="https://ent.univ-poitiers.fr/uPortal/render.userLayoutRootNode.uP" class="logo"><img src="logo1.png " alt="logo de l'univesité"></a>  
+
+  <div class="header-right">
+    <a class="active" href="acceuil.html">Acceuil</a>
+    <a href="authentification.html">Deconnexion</a>
+  </div>
+</div>
+
+</header>
+
+  <div class="topnav">
+  <a  href="acceuil.html">Acceuil</a>
+  <a  href="conducteur.html">Conducteur</a>
+  <a class="active" href="trajet.html">Passager</a>
+</div>
+<!--<h1 id="h">Ou vous-voulez aller ? </h1>-->
+
+<div class="form-style-5">
+<form>
+<fieldset>
+<legend> Chercher un trajet</legend>
+
+<label for="job">Départ:</label>
+<select id="job" name="field4">
+<optgroup>
+  <option value="" disabled selected>Choisir lieu Départ</option>
+  <option value="Descart">Descart</option>
+  <option value="Feture scope">Feture scope</option>
+  <option value="Centre Poitiers">Centre Poitiers</option>
+  <option value="Campus Poitiers">Campus Poitiers</option>
+  <option value="Campus Feture scope">Campus Feture scope</option>
+</optgroup>
+</select>  
+<label for="job">Arivée:</label>
+<select id="job" name="field4">
+<optgroup>
+  <option value="" disabled selected>choisir lieu d'arriver</option>
+  <option value="Descart">Descart</option>
+  <option value="Feture scope">Feture scope</option>
+  <option value="Centre Poitiers">Centre Poitiers</option>
+  <option value="Campus Poitiers">Campus Poitiers</option>
+  <option value="Campus Feture scope">Campus Feture scope</option>
+</optgroup>
+</select>  
+<label>Date :</label>
+<input type="Date" name="field3" placeholder="Date">
+<label>Heure :</label>
+<input type="text" name="field3" placeholder="Heure">
+    
+</fieldset>
+<input type="submit" value="Chercher un trajet" />
+</form>
+</div>
+
+<footer class="footer">
+  <div class="t3"><a href="https://ent.univ-poitiers.fr/uPortal/render.userLayoutRootNode.uP">Université de Poitiers</a> <br>
+  Tél : (33) (0)5 49 45 30 00 - Fax : (33) (0)5 49 45 30 50 - assistance@support.univ-poitiers.fr</pre></div>
+</footer>
+</body>
+</html>
