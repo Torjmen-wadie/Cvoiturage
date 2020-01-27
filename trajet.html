@@ -6,6 +6,15 @@
   <link rel="stylesheet" type="text/css" href="css.css">
   <link rel="stylesheet" type="text/css" href="chercher.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script language='javascript'>
+function Confirmer()
+{
+if (confirm("Confirmez vous avoir "))//+ formulaire.age.value +" ans ?"
+{
+formulaire.submit();
+}
+}
+</script>
 </head>
 <body>
 	<header>
@@ -25,22 +34,22 @@
   <a  href="conducteur.html">Conducteur</a>
   <a class="active" href="trajet.html">Passager</a>
 </div>
-<!--<h1 id="h">Ou vous-voulez aller ? </h1>-->
+
 
 <div class="form-style-5">
-<form>
+<form action="afficherResultat.html">
 <fieldset>
 <legend> Chercher un trajet</legend>
 
-<label for="job">Départ:</label>
-<select id="job" name="field4">
+<label >Départ:</label>
+<select name="field4">
 <optgroup>
   <option value="" disabled selected>Choisir lieu Départ</option>
   <option value="Descart">Descart</option>
-  <option value="Feture scope">Feture scope</option>
+  <option value="Feture scope">futuroscope</option>
   <option value="Centre Poitiers">Centre Poitiers</option>
   <option value="Campus Poitiers">Campus Poitiers</option>
-  <option value="Campus Feture scope">Campus Feture scope</option>
+  <option value="Campus Feture scope">Campus futuroscope</option>
 </optgroup>
 </select>  
 <label for="job">Arivée:</label>
@@ -48,10 +57,10 @@
 <optgroup>
   <option value="" disabled selected>choisir lieu d'arriver</option>
   <option value="Descart">Descart</option>
-  <option value="Feture scope">Feture scope</option>
+  <option value="futuroscope">futuroscope</option>
   <option value="Centre Poitiers">Centre Poitiers</option>
   <option value="Campus Poitiers">Campus Poitiers</option>
-  <option value="Campus Feture scope">Campus Feture scope</option>
+  <option value="Campus Feture scope">Campus futuroscope</option>
 </optgroup>
 </select>  
 <label>Date :</label>
@@ -60,8 +69,10 @@
 <input type="text" name="field3" placeholder="Heure">
     
 </fieldset>
-<input type="submit" value="Chercher un trajet" />
+
+<input type="submit" value="Chercher un trajet"/>
 </form>
+
 </div>
 
 <footer class="footer">
